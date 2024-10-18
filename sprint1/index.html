@@ -451,7 +451,7 @@
 <p><img alt="text" src="../captures/captura2.png" /></p>
 <p>disc inicial</p>
 <p><img alt="text" src="../captures/captura3.png" /></p>
-<p>disc despres d'asignarli les particions, on em creat una particio per l'area d'intercambi(swap), per la efi, per la home i l'arrel i em deixat disc lliure per el windows</p>
+<p>disc ja en les particions configurades amb l'arrel, la home i l'area d'intercambi(swap)</p>
 <p><img alt="text" src="../captures/captura4.png" /></p>
 <h2 id="configuracio-de-xarxa">configuracio de xarxa</h2>
 <p>1.per la configuracio de xarxa editarem el ficher yaml (/etc/netplan) i cambiarem el renderer per defecte NetworkManager a netword</p>
@@ -464,11 +464,36 @@
 <h2 id="progamari">progamari</h2>
 <p>jjjjj</p>
 <h2 id="gestors-darrencada">gestors d'arrencada</h2>
-<p>jjjj</p>
+<p>jjjj
+primer creare una maquina virtual amb 80gb, on 40 seran per un ubuntu 24?22? i els altres 40gb per windows 10</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>començarem instalant ubuntu amb instalacio manual per definir les particions on crearem una particio swap, una efi, l'arrel i la home</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>despres afegirem la iso del windows 10 </p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>i selecionarem la particio que previament habiem reservat</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>despres d'instalar windows el grub de ubuntu que ens permetia triar el sistema operatiu deixa de funcionar ja que (teoria gpt mbr etcetc) i la maquina virtual s'incia directament amb windows per tant utilitzarem l'eina grub2 per restaurarlo</p>
+<p>afegim la iso de grub2 a la maquina virtual</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>desde windows entrem al mode recuperacio desde usb-cd i seleccionem on es troba el grub2</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>un cop a la interficie de grub2 seleccionem detectar so </p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>i aqui busquem opcions avancades per ubuntu</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>i per ultim entrem a la versio ubuntu generic</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>un cop dins de ubuntu podem accedir a la terminal per recuperar el grub amb la comanda (comanda)</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>i per ultim fem un update grub2 per actualitzar la configuracio</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
+<p>al reiniciar la maquina ja ens apareix de nou el grub i podem accedir tant a ubuntu com a windows</p>
+<p><img alt="text" src="../captures/captura1.png" /></p>
 <h2 id="llicencies">llicencies</h2>
 <p>jjjjj
 explicar llicencia ubuntu
-<img alt="text" src="captures/captura.png" />
+<img alt="text" src="../captures/captura1.png" />
 foto llicencia cc (cc-by)
 afegir link a explicacio oficial web</p>
 
