@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../sprint1/">
+      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>Sprint2 - M1 valle suñe</title>
+        <title>Sprint 3 - M1 valle suñe</title>
       
     
     
@@ -68,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gestio-dusuaris-i-grups" class="md-skip">
+        <a href="#instalacio-de-domini-ldap" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -102,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sprint2
+              Sprint 3
             
           </span>
         </div>
@@ -231,9 +233,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../sprin3/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -324,10 +328,28 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../sprin3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sprint 3
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -336,6 +358,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacio-de-domini-ldap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalacio de domini LDAP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instalacio de domini LDAP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuracio-del-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuracio del servidor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracio-del-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuracio del client
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fitxers-i-comandes-ldap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fitxers i comandes LDAP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestio-de-dominis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gestio de dominis
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -355,32 +446,23 @@
                   
 
 
-  <h1>Sprint2</h1>
+  <h1>Sprint 3</h1>
 
-<h2 id="gestio-dusuaris-i-grups">gestio d'usuaris i grups</h2>
-<p>si</p>
-<p>creacio i eliminar usuaris
-primer crear un amb la opcio que directament et pregunta contrasenya i et crea la carpeta a home
-pero ensenyar tmb que tot i que s'ha creat la carpeta home no te res dintre i que tenim que entrar al user (per interficie) al menys per primera vegada per a que se creon les carpetes de sempre(descagas,docs,imgs,etc)
-i tmb crear un user amb la opcio que no demana ni contra i configurar tot, la contra ,el grup, la home, etc</p>
-<p>crear i eliminar grups</p>
-<p>afegir users a grups</p>
-<p>traurels</p>
-<p>permisos(dels users als grups i coses aixi)</p>
-<p>user en home user sense home</p>
-<p>adduser o useradd</p>
-<p>fitxers del etc (passwd,group,shadow,gshadow)
-explicacio rapida q hi ha a cada</p>
-<p>mencio rapida a lo de que amb el paquet gnome-system-tools obtenim una interficie grafica mes completa per la creacio d'usuaris i la modificacio dels grups als que formen part
-fotico de la interficie</p>
-<p>la creacio i gestio d'usuaris i grups per ubuntu es realitza principalment per linia de comandes, tot i aixo tambe existeixen opcions grafiques com el  (gnome system tools)(nose si te nom diferent)
-que ens permet gestionar els grups dels usuaris (entre altres). Tot i aixi a continuacio veurem les diferents maneres de gestionar usuaris i grups a traves de comandes.</p>
-<p>Comencem creant </p>
-<h2 id="gestio-de-permisos">gestio de permisos</h2>
-<p>jjj
-hola hola</p>
-<h2 id="processos">processos</h2>
-<p>jjj</p>
+<h2 id="instalacio-de-domini-ldap">Instalacio de domini LDAP</h2>
+<h3 id="configuracio-del-servidor">Configuracio del servidor</h3>
+<p>Per a configurar una maquina virtual com a servidor la ficarem en xarxa nat</p>
+<p>cap</p>
+<p>Des de dins del servidor li assignarem ip fixa per evitar problemes i cambis d'ip per dhcp</p>
+<p>cap (de la versio int no netp)</p>
+<p>Per ultim al fitxer /etc/hosts afegim una linia amb la ip fixa de la maquina, el hostname de la maquina, el domini i altra vegada el hostname</p>
+<p>cap</p>
+<p>Ara instalarem els paquets slapd i ldap-utils per configurar el servidor ldap </p>
+<h3 id="configuracio-del-client">Configuracio del client</h3>
+<p>uuu</p>
+<h2 id="fitxers-i-comandes-ldap">Fitxers i comandes LDAP</h2>
+<p>uuu</p>
+<h2 id="gestio-de-dominis">Gestio de dominis</h2>
+<!--![text](captures/captura.png)-->
 
 
 
