@@ -406,9 +406,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fitxers-i-comandes-ldap" class="md-nav__link">
+  <a href="#fitxers-i-comandes-ldap-configuracio-del-domini" class="md-nav__link">
     <span class="md-ellipsis">
-      Fitxers i comandes LDAP
+      Fitxers i comandes LDAP / Configuracio del domini
     </span>
   </a>
   
@@ -457,12 +457,58 @@
 <p>Per ultim al fitxer /etc/hosts afegim una linia amb la ip fixa de la maquina, el hostname de la maquina, el domini i altra vegada el hostname</p>
 <p>cap</p>
 <p>Ara instalarem els paquets slapd i ldap-utils per configurar el servidor ldap </p>
+<p>Per a configurar una maquina virtual com a servidor la ficarem en xarxa nat</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>Des de dins del servidor li assignarem ip fixa per evitar problemes i cambis d'ip per dhcp</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>Al fitxer /etc/hosts afegim una linia nova amb la ip fixa de la maquina, el hostname de la maquina, el domini i altra vegada el hostname, separat per punts</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>Ara instalarem els paquets slapd i ldap-utils per configurar el servidor ldap </p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>ens apareixera l’instalador i a la primera opcio li diem que no volem omitir la configuracio </p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>despres indiquem el nom de domini que utilitzarem</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>i despres unicamen el nom</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>li introduim una contrasenya</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>i la confirmem</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>li indiquem que borri la base de dades actual</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>i per ultim que si mogui la base de dades antiga per poder crear una nova</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>despres d’aixo s’haura instalat ldap correctament, tot i que si ens hem equivocat en alguna opcio podem tornar a repetir el proces amb la comanda dpkg-reconfigure sldap</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>per comprovar que estigui ven configurat podem utilitzar la comanda slapcat </p>
+<p><img alt="text" src="capss3/captura.png" /></p>
 <h3 id="configuracio-del-client">Configuracio del client</h3>
-<p>uuu</p>
-<h2 id="fitxers-i-comandes-ldap">Fitxers i comandes LDAP</h2>
+<p>per a configurar un client ubuntu el primer es desde terminal instalar els paquets libnss-ldap, libpam-ldap i nscd</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>ens apareixera l’instalador i el primer es indicar la ip del server ldap amb el format ldap://ip_server</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>li diem que si volem modificar la configuracio</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>ara li indiquem el domini</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>triem la ultima versio</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>li indiquem que l’usuari root sigui admin de la base de dades</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>volem que si demani contrasenya</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>li indiquem (noseloq)(admin i eso)</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>ens demana la contrasenya  i confirmarla</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>per defecte ia ve este</p>
+<p><img alt="text" src="capss3/captura.png" /></p>
+<p>i ia</p>
+<h2 id="fitxers-i-comandes-ldap-configuracio-del-domini">Fitxers i comandes LDAP / Configuracio del domini</h2>
 <p>uuu</p>
 <h2 id="gestio-de-dominis">Gestio de dominis</h2>
-<!--![text](captures/captura.png)-->
+<!--![text](capss3/captura.png)-->
 
 
 
